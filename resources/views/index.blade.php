@@ -1,0 +1,2 @@
+<?php
+   // Blade view

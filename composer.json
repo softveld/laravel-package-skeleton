@@ -1,0 +1,57 @@
+{
+   "name": ":vendor_name/:package_name",
+   "descrption": ":package_description",
+   "keywords": [
+      ":package_name",
+      ":vendor_name"
+   ],
+   "homepage": "https://github.com/:vendor_name/:package_name",
+   "license": "MIT",
+   "authors": [
+      {
+         "name": ":author_name",
+         "email": ":author_email",
+         "role": "Developer"
+      }
+   ],
+   "scripts": {
+      "style-fix": "php-cs-fixer fix",
+      "test": "phpunit --colors=always",
+      "test-coverage": "phpunit --coverage-html coverage"
+   },
+   "require": {
+      "php": "^7.4|^8.0",
+      "illuminate/database": "^8.32"
+   },
+   "require-dev": {
+      "phpunit/phpunit": "^9.5",
+      "friendsofphp/php-cs-fixer": "^2.18",
+      "orchestra/testbench": "^6.13"
+   },
+   "autoload": {
+      "psr-4": {
+         "Softveld\\Skeleton\\": "src",
+         "Softveld\\Skeleton\\Database\\Factories\\": "database/factories"
+     }
+   },
+   "autoload-dev": {
+      "psr-4": {
+          "Softveld\\Skeleton\\Tests\\": "tests"
+      }
+  },
+  "extra": {
+      "laravel": {
+         "providers": [
+            "Softveld\\Skeleton\\SkeletonServiceProvider"
+         ],
+         "aliases": {
+            "Skeleton": "Softveld\\Skeleton\\SkeletonFacade"
+         }
+      }
+   },
+   "config": {
+      "sort-packages": true
+   },
+   "minimum-stability": "dev",
+   "prefer-stable": true
+}
