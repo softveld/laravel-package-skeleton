@@ -8,7 +8,7 @@ updates:
       time: "12:00"
       timezone: Europe/Berlin
     reviewers:
-      - karimh777
+      - hassan715
     labels:
       - "Type: CI"
       - "Type: Dependencies"
@@ -23,7 +23,7 @@ updates:
       - dependency-name: "prettier"
         versions: [">1.14.3"]
     reviewers:
-      - karimh777
+      - hassan715
     labels:
       - "Type: Dependencies"
     versioning-strategy: increase
