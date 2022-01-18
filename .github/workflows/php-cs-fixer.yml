@@ -25,7 +25,7 @@ jobs:
         id: extract_branch
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4.9.2
+        uses: stefanzweifel/git-auto-commit-action@v4.13.1
         with:
           commit_message: "chore: fix styling"
           branch: ${{ steps.extract_branch.outputs.branch }}
